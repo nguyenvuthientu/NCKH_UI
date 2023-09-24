@@ -55,7 +55,11 @@
 
 <script>
     function onButtonLoginClicked() {
-        location.href = '@Url.Action("Index", "Login", new { area = "Diary" })';
+        location.href = '@Url.Action("Index", "ProfileDiary", new { area = "Diary" })';
+    }
+
+    function onButtonForgotPasswordClicked() {
+        location.href = '@Url.Action("Index", "ForgotPassword", new { area = "Admin" })';
     }
 
     function onButtonCreateAccountClicked() {

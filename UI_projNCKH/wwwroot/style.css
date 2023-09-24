@@ -30,8 +30,45 @@ Version:	1.0.0
 	+ Gallery CSS
 * Forms CSS
 * Utilities CSS
-========================================*/ 
+========================================*/
+@font-face {
+	font-family: ChapbookRegularFont;
+	src: url(../../webfonts/chapbook.regular.otf);
+}
 
+@font-face {
+	font-family: ChapbookItalicFont;
+	src: url(../../webfonts/chapbook.italic.otf);
+}
+
+@font-face {
+	font-family: BalooRegularFont;
+	src: url(../../webfonts/Baloo-Regular.ttf);
+}
+
+:root {
+	--color-01: #FDF3DD;
+	--color-02: #CDAE8C;
+	--color-03: #F9F4EC;
+	--color-04: #F4EADC;
+	--color-05: #BBA190;
+	--white-color: #fff;
+}
+
+body, button, input, select, optgroup, textarea,
+h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a {
+	font-family: ChapbookRegularFont;
+}
+
+.chapbook-font-italic {
+	font-family: ChapbookItalicFont;
+}
+
+.baloo-font {
+	font-family: BalooRegularFont;
+}
+
+#FDF3DD
 /*======================================
     Header & Sidebar CSS
 ========================================*/
