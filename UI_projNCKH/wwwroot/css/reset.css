@@ -28,7 +28,6 @@ textarea {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-    color: #2F3032
 }
 h1,h2,h3,h4,h5h6 {
     margin: 0 0 15px;
@@ -1720,7 +1719,7 @@ object {
 	border: none;
 	/* font-size: 14px; */
 	position: relative;
-	background: #0A82FD;
+	background: var(--color-02);
 	font-size: 16px;
 	color: #fff;
 	align-items: center;
@@ -2387,12 +2386,6 @@ object {
 }
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
 	color: #2F3032;
-}
-
-@media only screen and (max-width: 767px) {
-	body, button, input, select, optgroup, textarea{
-		line-height: 23px;
-	}
 }
 @media only screen and (min-width: 768px) and (max-width: 1278px) {
 	.offcanvas-toggler {
