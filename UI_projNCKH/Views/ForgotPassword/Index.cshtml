@@ -17,7 +17,7 @@
             <!-- Form Group -->
             <div class="form-group">
                 <div class="form-group__input">
-                    <label class="label-input">Email đăng ký tài khoản</label>
+                    <label class="crancy-wc__form-label">Email đăng ký tài khoản</label>
                     <input class="crancy-wc__form-input" type="email" name="email" required="required">
                 </div>
             </div>
@@ -37,6 +37,6 @@
 
 <script>
     function onButtonBackToLoginClicked() {
-        location.href = '@Url.Action("Index", "Home", new { area = "" })';
+        location.href = '@Url.Action("Index", "Login", new { area = "" })';
     }
 </script>

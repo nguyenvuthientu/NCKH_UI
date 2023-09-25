@@ -5568,11 +5568,15 @@ span.crancy-chatbox__typing {
 	  padding: 13px 15px;
 	  border-radius: 4px;
   }
-  .crancy-psidebar a:hover, .crancy-psidebar a.active {
-	  background: transparent;
-	  fill: #fff;
-	  background: #3B9BFD;
-  }
+	.crancy-psidebar a:hover, .crancy-psidebar a.active {
+		color: var(--color-02);
+		background: var(--color-03);
+		border-color: none;
+	}
+
+		.crancy-psidebar a:hover .crancy-psidebar__icon svg, .crancy-psidebar a.active .crancy-psidebar__icon svg {
+			fill: var(--color-02);
+		}
   .crancy-psidebar {
 	background: var(--color-02);
 	padding: 25px 30px;
@@ -6322,7 +6326,7 @@ width: 100%;
 }
 
 .crancy-password__img {
-	max-width: 400px;
+	max-width: 600px;
 	justify-content: center;
 	align-items: center;
 	display: flex;
@@ -6381,13 +6385,14 @@ width: 100%;
 	border-top: none !important;
 }
 blockquote {
-	background: #F2C94C;
+	background: var(--color-02);
 	padding: 25px;
-	color: #2F3032;
-	font-size: 18px;
+	color: var(--white-color);
+	font-size: 28px;
 	border-radius: 5px;
 	margin-bottom: 30px;
 	line-height: 30px;
+	text-align: center;
 }
 .crancy-ptabs__page p {
 	margin-bottom: 20px;

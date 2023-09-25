@@ -193,7 +193,7 @@ textarea::-ms-input-placeholder,input::-ms-input-placeholder {
 	text-align: center;
 	cursor: pointer;
 	position: relative;
-	background: #0A82FD;
+	background: var(--color-02);
 	line-height: 30px;
 	color: #fff;
 	width: 16px;
