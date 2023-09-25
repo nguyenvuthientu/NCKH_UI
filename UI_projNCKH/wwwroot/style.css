@@ -74,6 +74,12 @@ h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a {
 	font-family: BalooRegularFont;
 }
 
+.link-href {
+	font-size: 28px;
+}
+.label-input {
+	font-size: 20px;
+}
 /*======================================
     Header & Sidebar CSS
 ========================================*/
@@ -6673,8 +6679,8 @@ blockquote {
 	overflow: hidden;
 }
 .crancy-wc__logo {
-	padding-top: 40px;
-	padding-left: 40px;
+	text-align: center;
+	padding: 30px;
 }
 .crancy-wc__logo img {
 	max-width: 235px;
@@ -7029,6 +7035,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, in
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: 16px;
 }
 .crancy-wc__form-login--label {
 	text-align: center;
@@ -7320,9 +7327,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, in
 	.form-mg-top30{
 		margin-top:20px !important;
 	}
-	.crancy-wc__form-title {
-		font-size: 28px;
-	}
 }
 @media only screen and (min-width: 0px) and (max-width: 1200px) {
 	.crancy-wc__form {
@@ -7359,8 +7363,13 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, in
 		height: initial;
    }
 	.crancy-wc__form-title {
+		font-size: 30px;
+	}
+
+	.link-href {
 		font-size: 20px;
 	}
+
 	.crancy-wc__text {
 		font-size: 16px;
    }

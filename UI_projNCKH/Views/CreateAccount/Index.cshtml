@@ -1,0 +1,63 @@
+﻿<div class="crancy-wc__form--middle">
+	<div class="crancy-wc__banner">
+		<img src="~/img/welcome-vector.png" alt="#">
+	</div>
+	<div class="crancy-wc__form-inner">
+		<div class="crancy-wc__logo">
+			<img src="~/img/logo-white.png">
+		</div>
+		<div class="crancy-wc__heading">
+			<h3 class="crancy-wc__form-title crancy-wc__form-title__one">Tạo tài khoản</h3>
+		</div>
+		<!-- Sign in Form -->
+		<form class="crancy-wc__form-main" action="index.html" method="post">
+			<div class="form-group">
+				<div class="form-group__input">
+					<label class="label-input">Họ và tên</label>
+					<input class="crancy-wc__form-input" type="text" name="first-name" required="required">
+				</div>
+			</div>
+			<!-- Form Group -->
+			<div class="form-group">
+				<div class="form-group__input">
+					<label class ="label-input">Địa chỉ Email</label>
+					<input class="crancy-wc__form-input" type="email" name="email" required="required">
+				</div>
+			</div>
+			<!-- Form Group -->
+			<div class="form-group">
+				<div class="form-group__input">
+					<label class="label-input">Mật khẩu</label>
+					<input class="crancy-wc__form-input" id="password-field" type="password" name="password" maxlength="8" required="required">
+					<span class="crancy-wc__toggle"><i class="fas fa-eye" id="toggle-icon"></i></span>
+				</div>
+			</div>
+			<!-- Form Group -->
+			<div class="form-group">
+				<div class="crancy-wc__check-inline">
+					<div class="crancy-wc__checkbox">
+						<input class="crancy-wc__form-check" id="checkbox" name="checkbox" type="checkbox">
+						<label for="checkbox">Bạn có đồng ý với điều khoản.</label>
+					</div>
+				</div>
+			</div>
+			<!-- Form Group -->
+			<div class="form-group form-mg-top25" style="text-align: center;">
+				<button class="crancy-btn" type="submit" >Đăng ký với Email</button>
+			</div>
+			<!-- Form Group -->
+			<div class="form-group form-mg-top30">
+				<div class="crancy-wc__bottom">
+					<p class="crancy-wc__text">Bạn đã có tài khoản chưa ? <a onclick="onButtonBackToLoginClicked()">Đăng nhập</a></p>
+				</div>
+			</div>
+		</form>
+		<!-- End Sign in Form -->
+	</div>
+</div>
+
+<script>
+	function onButtonBackToLoginClicked() {
+		location.href = '@Url.Action("Index", "Login", new { area = "" })';
+	}
+</script>

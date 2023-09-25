@@ -1,0 +1,42 @@
+﻿
+<div class="crancy-wc__form--middle">
+    <div class="crancy-wc__banner  d-none d-lg-block">
+
+        <img src="~/img/welcome-vector.png" alt="#">
+    </div>
+    <div class="crancy-wc__form-inner">
+        <div class="crancy-wc__logo">
+            <img src="~/img/logo-white.png">
+        </div>
+        <div class="crancy-wc__heading">
+            <h3 class="crancy-wc__form-title crancy-wc__form-title__one">Khôi phục lại mật khẩu</h3>
+            <p>Hãy nhập địa chỉ email liên kết với tài khoản của bạn và chúng tôi sẽ gửi cho bạn một liên kết để đặt lại mật khẩu.</p>
+        </div>
+        <!-- Sign in Form -->
+        <form class="crancy-wc__form-main" action="index.html" method="post">
+            <!-- Form Group -->
+            <div class="form-group">
+                <div class="form-group__input">
+                    <label class="label-input">Email đăng ký tài khoản</label>
+                    <input class="crancy-wc__form-input" type="email" name="email" required="required">
+                </div>
+            </div>
+            <!-- Form Group -->
+            <div class="form-group">
+                <p class="crancy-wc__text"><a onclick="onButtonBackToLoginClicked()">Trờ về màn hình đăng nhập</a></p>
+            </div>
+            <!-- Form Group -->
+            <div class="form-group form-mg-top25" style="text-align: center;">
+                <button class="crancy-btn" type="submit">Tiến hành khôi phục mật khẩu</button>
+            </div>
+        </form>
+        <!-- End Sign in Form -->
+    </div>
+</div>
+
+
+<script>
+    function onButtonBackToLoginClicked() {
+        location.href = '@Url.Action("Index", "Home", new { area = "" })';
+    }
+</script>
