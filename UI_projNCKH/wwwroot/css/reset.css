@@ -728,7 +728,7 @@ textarea::-ms-input-placeholder,input::-ms-input-placeholder {
 	color: #F2994A !important;
 }
 .crancy-gcolor{
-	color: #27AE60 !important;
+	color: var(--color--02) !important;
 }
 .crancy-gbcolor{
 	background-color: #27AE60 !important;

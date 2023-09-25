@@ -1,114 +1,423 @@
 ﻿<!-- crancy Dashboard -->
 <section class="crancy-adashboard crancy-show">
-	<div class="container">
-		<div class="row">
-			<div class="col-12 mg-top-30">
-				<!-- BreadCrumb -->
-				<div class="crancy-pbreadcrumb">
-					<h4 class="crancy-sidebar__title">Viết nhật ký</h4>
-				</div>
-				<!-- End BreadCrumb -->
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-12">
-				<div class="crancy-body">
-					<!-- Dashboard Inner -->
-					<div class="crancy-dsinner">
-						<div class="mg-top-30">
-							<!-- End All Notification Heading -->
-							<div class="crancy-chatbox">
-								<div class="row g-0">
-									<div class="crancy-chatbox__explore">
-										<div class="crancy-chatbox__explore-body">
-											<!-- Outgoing List -->
-											<div class="crancy-chatbox__incoming crancy-chatbox__outgoing">
-												<ul class="crancy-chatbox__incoming-list">
-													<!-- Single Incoming -->
-													<li>
-														<div class="crancy-chatbox__chat">
-															<div class="crancy-chatbox__main-content">
-																<div class="crancy-chatbox__incoming-chat">
-																	<p class="crancy-chatbox__incoming-text">
-																		Hôm nay tôi thật mệt mỏi, những chuyện khó khăn trong cuộc sống cứ đến với tôi, tôi phải làm sao đây
-																	</p>
-																</div>
-															</div>
-															<div class="crancy-chatbox__author-img">
-																<img src="~/img/collection-3.png" alt="#">
-															</div>
-														</div>
-													</li>
-													<!-- End Single Incoming -->
-												</ul>
-											</div>
-											<!-- End Outgoing List -->
-											<!-- Incomming List -->
-											<div class="crancy-chatbox__incoming">
-												<ul class="crancy-chatbox__incoming-list">
-													<!-- Single Incoming -->
-													<li>
-														<div class="crancy-chatbox__chat">
-															<div class="crancy-chatbox__author-img">
-																<img src="~/img/social-1.png" alt="#">
-															</div>
-															<div class="crancy-chatbox__main-content">
-																<div class="crancy-chatbox__incoming-chat">
-																	<p class="crancy-chatbox__incoming-text">
-																		Tôi rất tiếc khi nghe bạn đang trải qua những thời điểm khó khăn. Cuộc sống có thể gặp phải nhiều thách thức và mệt mỏi là một phần tự nhiên của cuộc sống hàng ngày. Tuy nhiên, có một số cách bạn có thể thử để giúp bạn vượt qua những thời gian khó khăn này:
-																		<br />
-																		- Nghỉ ngơi và chăm sóc bản thân: Đảm bảo bạn có đủ giấc ngủ và nghỉ ngơi để tái tạo năng lượng. Hãy dành thời gian cho các hoạt động giúp bạn thư giãn và tạo niềm vui, như đọc sách, nghe nhạc, đi dạo, hoặc tham gia vào sở thích của bạn.
-																		<br />
-																		- Đặt mục tiêu nhỏ: Chia nhỏ các nhiệm vụ hoặc vấn đề lớn thành các bước nhỏ hơn và tập trung vào từng bước một. Điều này giúp bạn cảm thấy hài lòng và đạt được tiến bộ từng chút một, giảm áp lực và mệt mỏi.
-																		<br />
-																		- Tập thể dục: Làm việc năng động hoặc tập thể dục có thể giúp bạn giải tỏa căng thẳng và cải thiện tâm trạng. Thậm chí chỉ là đi bộ trong một khoảng thời gian ngắn cũng có thể giúp bạn cảm thấy tươi mới và sảng khoái hơn.
-																		<br />
-																		- Tìm kiếm cách giải quyết vấn đề: Xem xét các giải pháp có thể giúp bạn vượt qua các khó khăn mà bạn đang gặp phải. Nếu cần thiết, hãy tìm kiếm sự tư vấn từ chuyên gia hoặc chuyên viên tâm lý để được hỗ trợ và chỉ dẫn.
-																		<br />
-																		- Hãy nhớ rằng cuộc sống có những thăng trầm và không phải lúc nào cũng dễ dàng. Hãy cố gắng giữ một tinh thần tích cực và kiên nhẫn. Tự tin rằng bạn có khả năng vượt qua khó khăn và hãy nhớ rằng sự mệt mỏi sẽ không kéo dài mãi mãi.
-																		<br />
-																	</p>
-																</div>
-															</div>
-														</div>
-													</li>
-													<!-- End Single Incoming -->
-												</ul>
-											</div>
-											<!-- End Incomming List -->
-											<!-- New Message -->
-											<div class="crancy-chatbox__new-message">
-												<div class="crancy-chatbox__form">
-													<form class="crancy-chatbox__form-inner" action="#">
-														<textarea name="s" value="" type="text"
-																  placeholder="Type a message..."></textarea>
-														<div class="crancy-chatbox__button">
-															<div class="crancy-chatbox__button-inline">
-	
-															</div>
-															<div class="crancy-chatbox__submit">
-																<button class="crancy-chatbox__submit-btn"
-																		type="submit">
-																	<img src="~/img/send-icon.svg">Gửi
-																</button>
-															</div>
-														</div>
-													</form>
-												</div>
-											</div>
-											<!-- End New Message -->
+    <div class="container">
+        <div class="row crancy-wc__form-main mg-top-30">
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="form-group">
+                    <div class="form-group__input">
+                        <label class="crancy-wc__form-label">Hành trình</label>
+                        <input class="crancy-wc__form-input" name="journey" required="required" value="Tìm lại chính mình">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="form-group">
+                    <div class="form-group__input">
+                        <label class="crancy-wc__form-label">Ngày bắt đầu</label>
+                        <div class="crancy-table-filter__group">
+                            <input type="text" id="dateInput">
+                            <span class="crancy-table-filter__icon">
+                                <img src="~/img/calendar-icon.png" style="height: 20px;">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="crancy-body">
+                    <!-- Dashboard Inner -->
+                    <div class="crancy-dsinner">
+                        <div class="mg-top-30">
+                            <!-- End All Notification Heading -->
+                            <div class="crancy-chatbox">
+                                <div class="row g-0">
+                                    <div class="col-lg-4 col-md-4 col-12 crancy-chatbox__one">
+                                        <div class="crancy-chatbox__sidebar">
 
-										</div>
+                                            <div class="crancy-chatbox__first-group">
+                                                <h4 class="crancy-sidebar__title">Nội dung (7)</h4>
+                                            </div>
+                                            <!-- Chatbox List -->
+                                            <ul class="crancy-chatbox__list">
+                                                <!-- Single List -->
+                                                <li class="active">
+                                                    <div class="crancy-chatbox__inner">
+                                                        <div class="crancy-chatbox__author">
+                                                            <div class="crancy-chatbox__author-img">
+                                                                <img src="~/img/collection-2.png" alt="#">
+                                                                <span class="crancy-chatbox__author-online"></span>
+                                                            </div>
+                                                            <div class="crancy-chatbox__author-content">
+                                                                <h4 class="crancy-chatbox__author-title">
+                                                                    Nội dung: Nội dung 01
+                                                                </h4>
+                                                                <p class="crancy-chatbox__author-desc">
+                                                                    Ngày tạo: 20/09/2023
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        @* 														<div class="crancy-chatbox__right">
+                                                        <div class="crancy-chatbox__info">
+                                                        <p class="crancy-chatbox__time">10:34PM</p>
+                                                        </div>
+                                                        <div class="crancy-chatbox__toggle">
+                                                        <img src="~/img/toggle-icon2.svg">
+                                                        </div>
+                                                        </div> *@
+                                                    </div>
+                                                </li>
+                                                <!-- End Single List -->
+                                                <!-- Single List -->
+                                                <li>
+                                                    <div class="crancy-chatbox__inner">
+                                                        <div class="crancy-chatbox__author">
+                                                            <div class="crancy-chatbox__author-img">
+                                                                <img src="~/img/collection-2.png" alt="#">
+                                                                <span class="crancy-chatbox__author-online"></span>
+                                                            </div>
+                                                            <div class="crancy-chatbox__author-content">
+                                                                <h4 class="crancy-chatbox__author-title">
+                                                                    Nội dung: Nội dung 02
+                                                                </h4>
+                                                                <p class="crancy-chatbox__author-desc">
+                                                                    Ngày tạo: 20/09/2023
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <!-- End Single List -->
+                                                <!-- Single List -->
+                                                <li>
+                                                    <div class="crancy-chatbox__inner">
+                                                        <div class="crancy-chatbox__author">
+                                                            <div class="crancy-chatbox__author-img">
+                                                                <img src="~/img/collection-2.png" alt="#">
+                                                                <span class="crancy-chatbox__author-online"></span>
+                                                            </div>
+                                                            <div class="crancy-chatbox__author-content">
+                                                                <h4 class="crancy-chatbox__author-title">
+                                                                    Nội dung: Nội dung 03
+                                                                </h4>
+                                                                <p class="crancy-chatbox__author-desc">
+                                                                    Ngày tạo: 20/09/2023
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <!-- End Single List -->
+                                                <!-- Single List -->
+                                                <li>
+                                                    <div class="crancy-chatbox__inner">
+                                                        <div class="crancy-chatbox__author">
+                                                            <div class="crancy-chatbox__author-img">
+                                                                <img src="~/img/collection-2.png" alt="#">
+                                                                <span class="crancy-chatbox__author-online"></span>
+                                                            </div>
+                                                            <div class="crancy-chatbox__author-content">
+                                                                <h4 class="crancy-chatbox__author-title">
+                                                                    Nội dung: Nội dung 04
+                                                                </h4>
+                                                                <p class="crancy-chatbox__author-desc">
+                                                                    Ngày tạo: 20/09/2023
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <!-- End Single List -->
+                                                <!-- Single List -->
+                                                <li>
+                                                    <div class="crancy-chatbox__inner">
+                                                        <div class="crancy-chatbox__author">
+                                                            <div class="crancy-chatbox__author-img">
+                                                                <img src="~/img/collection-2.png" alt="#">
+                                                                <span class="crancy-chatbox__author-online"></span>
+                                                            </div>
+                                                            <div class="crancy-chatbox__author-content">
+                                                                <h4 class="crancy-chatbox__author-title">
+                                                                    Nội dung: Nội dung 05
+                                                                </h4>
+                                                                <p class="crancy-chatbox__author-desc">
+                                                                    Ngày tạo: 20/09/2023
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <!-- End Single List -->
+                                                <!-- Single List -->
+                                                <li>
+                                                    <div class="crancy-chatbox__inner">
+                                                        <div class="crancy-chatbox__author">
+                                                            <div class="crancy-chatbox__author-img">
+                                                                <img src="~/img/collection-2.png" alt="#">
+                                                                <span class="crancy-chatbox__author-online"></span>
+                                                            </div>
+                                                            <div class="crancy-chatbox__author-content">
+                                                                <h4 class="crancy-chatbox__author-title">
+                                                                    Nội dung: Nội dung 06
+                                                                </h4>
+                                                                <p class="crancy-chatbox__author-desc">
+                                                                    Ngày tạo: 20/09/2023
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <!-- End Single List -->
+                                                <!-- Single List -->
+                                                <li>
+                                                    <div class="crancy-chatbox__inner">
+                                                        <div class="crancy-chatbox__author">
+                                                            <div class="crancy-chatbox__author-img">
+                                                                <img src="~/img/collection-2.png" alt="#">
+                                                                <span class="crancy-chatbox__author-online"></span>
+                                                            </div>
+                                                            <div class="crancy-chatbox__author-content">
+                                                                <h4 class="crancy-chatbox__author-title">
+                                                                    Nội dung: Nội dung 07
+                                                                </h4>
+                                                                <p class="crancy-chatbox__author-desc">
+                                                                    Ngày tạo: 20/09/2023
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <!-- End Single List -->
+                                            </ul>
+                                        </div>
+                                    </div>
 
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- End Dashboard Inner -->
-				</div>
-			</div>
-		</div>
-	</div>
+                                    <div class="col-lg-8 col-md-8 col-12  crancy-chatbox__two">
+                                        <div class="crancy-chatbox__explore">
+                                            <div class="crancy-chatbox__explore-head">
+                                                <div class="crancy-chatbox__author">
+                                                    <div class="crancy-chatbox__author-img--head">
+                                                        <img src="~/img/chat-top-ms.png" alt="#">
+                                                    </div>
+                                                    <div class="crancy-chatbox__heading">
+                                                        <h4 class="crancy-chatbox__heading--title">
+                                                            Leslie
+                                                            Alexander
+                                                        </h4>
+                                                        <p class="crancy-chatbox__heading--text crancy-pcolor">
+                                                            Typing...
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="crancy-chatbox__toggle">
+                                                    <img src="~/img/toggle-icon2.svg">
+                                                </div>
+                                            </div>
+
+                                            <div class="crancy-chatbox__explore-body">
+                                                <!-- Incomming List -->
+                                                <div class="crancy-chatbox__incoming">
+                                                    <ul class="crancy-chatbox__incoming-list">
+                                                        <!-- Single Incoming -->
+                                                        <li>
+                                                            <div class="crancy-chatbox__chat">
+                                                                <div class="crancy-chatbox__author-img">
+                                                                    <img src="~/img/chat-author11.png" alt="#">
+                                                                </div>
+                                                                <div class="crancy-chatbox__main-content">
+                                                                    <div class="crancy-chatbox__incoming-chat">
+                                                                        <p class="crancy-chatbox__incoming-text">
+                                                                            Hi! I had about question about my
+                                                                            last transaction
+                                                                        </p>
+                                                                    </div>
+                                                                    <p class="crancy-chatbox__time  crancy-chatbox__time-two">
+                                                                        09:30 AM
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <!-- End Single Incoming -->
+                                                    </ul>
+                                                </div>
+                                                <!-- End Incomming List -->
+                                                <!-- Outgoing List -->
+                                                <div class="crancy-chatbox__incoming crancy-chatbox__outgoing">
+                                                    <ul class="crancy-chatbox__incoming-list">
+                                                        <!-- Single Incoming -->
+                                                        <li>
+                                                            <div class="crancy-chatbox__chat">
+                                                                <div class="crancy-chatbox__main-content">
+                                                                    <p class="crancy-chatbox__time  crancy-chatbox__time-two">
+                                                                        10:00 PM
+                                                                    </p>
+                                                                    <div class="crancy-chatbox__incoming-chat">
+                                                                        <p class="crancy-chatbox__incoming-text">
+                                                                            Hi, What can I help you with?
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="crancy-chatbox__author-img">
+                                                                    <img src="~/img/chat-author12.png" alt="#">
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <!-- End Single Incoming -->
+                                                    </ul>
+                                                </div>
+                                                <!-- End Outgoing List -->
+                                                <!-- Incomming List -->
+                                                <div class="crancy-chatbox__incoming">
+                                                    <ul class="crancy-chatbox__incoming-list">
+                                                        <!-- Single Incoming -->
+                                                        <li>
+                                                            <div class="crancy-chatbox__chat">
+                                                                <div class="crancy-chatbox__author-img">
+                                                                    <img src="~/img/chat-author11.png" alt="#">
+                                                                </div>
+                                                                <div class="crancy-chatbox__main-content">
+                                                                    <div class="crancy-chatbox__incoming-chat">
+                                                                        <p class="crancy-chatbox__incoming-text">
+                                                                            Is this possible to refund?
+                                                                        </p>
+                                                                    </div>
+                                                                    <p class="crancy-chatbox__time  crancy-chatbox__time-two">
+                                                                        11.32 PM
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <!-- End Single Incoming -->
+                                                    </ul>
+                                                </div>
+                                                <!-- End Incomming List -->
+                                                <!-- Outgoing List -->
+                                                <div class="crancy-chatbox__incoming crancy-chatbox__outgoing">
+                                                    <ul class="crancy-chatbox__incoming-list">
+                                                        <!-- Single Incoming -->
+                                                        <li>
+                                                            <div class="crancy-chatbox__chat">
+                                                                <div class="crancy-chatbox__main-content">
+                                                                    <p class="crancy-chatbox__time  crancy-chatbox__time-two">
+                                                                        11:55 PM
+                                                                    </p>
+                                                                    <div class="crancy-chatbox__incoming-chat">
+                                                                        <p class="crancy-chatbox__incoming-text">
+                                                                            Of course, it is available in 38 and
+                                                                            several other sizes which are very
+                                                                            complete
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="crancy-chatbox__author-img">
+                                                                    <img src="~/img/chat-author12.png" alt="#">
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <!-- End Single Incoming -->
+                                                    </ul>
+                                                </div>
+                                                <!-- End Outgoing List -->
+                                                <!-- Incomming List -->
+                                                <div class="crancy-chatbox__incoming">
+                                                    <ul class="crancy-chatbox__incoming-list">
+                                                        <!-- Single Incoming -->
+                                                        <li>
+                                                            <div class="crancy-chatbox__chat">
+                                                                <div class="crancy-chatbox__author-img">
+                                                                    <img src="~/img/chat-author11.png" alt="#">
+                                                                </div>
+                                                                <div class="crancy-chatbox__main-content">
+                                                                    <div class="crancy-chatbox__incoming-chat">
+                                                                        <p class="crancy-chatbox__incoming-text">
+                                                                            Eleanor Pena <span class="crancy-chatbox__typing">
+                                                                                is
+                                                                                typing...
+                                                                            </span>
+                                                                        </p>
+                                                                    </div>
+                                                                    <p class="crancy-chatbox__time  crancy-chatbox__time-two">
+                                                                        11.59 PM
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <!-- End Single Incoming -->
+                                                    </ul>
+                                                </div>
+                                                <!-- End Incomming List -->
+                                                <!-- New Message -->
+                                                <div class="crancy-chatbox__new-message">
+                                                    <div class="crancy-chatbox__form">
+                                                        <form class="crancy-chatbox__form-inner" action="#">
+                                                            <textarea name="s" value="" type="text"
+                                                                      placeholder="Type a message..."></textarea>
+                                                            <div class="crancy-chatbox__button">
+                                                                <div class="crancy-chatbox__button-inline">
+                                                                    <div class="crancy-chatbox__button-inline__single crancy-chatbox__button-inline__highlights">
+                                                                        <a href="#">
+                                                                            <img src="~/img/bold-icon.svg">
+                                                                        </a>
+                                                                        <a href="#">
+                                                                            <img src="~/img/italic-icon.svg">
+                                                                        </a>
+                                                                        <a href="#">
+                                                                            <img src="~/img/underline-icon.svg">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="crancy-chatbox__button-inline__single crancy-chatbox__button-inline__link">
+                                                                        <a href="#">
+                                                                            <img src="~/img/link-icon.svg">
+                                                                        </a>
+                                                                        <a href="#">
+                                                                            <img src="~/img/imoji-icon.svg">
+                                                                        </a>
+                                                                        <a href="#">
+                                                                            <img src="~/img/photo-icon.svg">
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="crancy-chatbox__submit">
+                                                                    <button class="crancy-chatbox__submit-btn"
+                                                                            type="submit">
+                                                                        <img src="~/img/send-icon.svg">Send
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <!-- End New Message -->
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Dashboard Inner -->
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 <!-- End crancy Dashboard -->
+
+<script>
+    var picker = new Pikaday({ field: document.getElementById('dateInput') });
+    // Create a new instance of Pikaday for the date-input field
+    const picker1 = new Pikaday({
+        field: document.getElementById('date-input'),
+        format: 'dd/MM/yyyy', // Set the desired format
+        toString(date, format) {
+            const day = date.getDate();
+            const month = date.toLocaleString('default', { month: 'short' });
+            const formattedDate = `${month}`;
+            console.log("formattedDate", formattedDate);
+            return formattedDate;
+        }
+    });
+</script>

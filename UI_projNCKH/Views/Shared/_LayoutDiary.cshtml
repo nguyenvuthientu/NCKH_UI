@@ -28,8 +28,27 @@
     <link rel="stylesheet" href="~/css/jvector-map.css">
     <link rel="stylesheet" href="~/css/fancy-box.min.css">
     <link rel="stylesheet" href="~/css/nice-select.min.css">
-    <link rel="stylesheet" href="~/css/reset.css">
+	<link rel="stylesheet" href="~/css/reset.css">
+	<link rel="stylesheet" href="~/css/pikaday.min.css">
     <link rel="stylesheet" href="~/style.css">
+	<!-- datepicker styles -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.min.css">
+	<!-- Dashra Scripts -->
+	<script src="~/js/jquery.min.js"></script>
+	<script src="~/js/jquery-migrate.js"></script>
+	<script src="~/js/popper.min.js"></script>
+	<script src="~/js/bootstrap.min.js"></script>
+	<script src="~/js/charts.js"></script>
+	<script src="~/js/final-countdown.min.js"></script>
+	<script src="~/js/fancy-box.min.js"></script>
+	<script src="~/js/fullcalendar.min.js"></script>
+	<script src="~/js/datatables.min.js"></script>
+	<script src="~/js/circle-progress.min.js"></script>
+	<script src="~/js/jquery-jvectormap.js"></script>
+	<script src="~/js/jvector-map.js"></script>
+	<script src="~/js/nice-select.min.js"></script>
+	<script src="~/js/pikaday.min.js"></script>
+	<script src="~/js/main.js"></script>
 </head>
 <body id="crancy-dark-light">
 	<div class="crancy-body-area ">
@@ -43,10 +62,8 @@
 					<a class="crancy-logo" onclick="onButtonProfileDiaryClicked()">
 						<!-- Logo for Default -->
 						<img class="crancy-logo__main" src="~/img/logo.png" alt="#">
-						<img class="crancy-logo__main--dark" src="~/img/logo-dark.png" alt="#">
 						<!-- Logo for Dark Version -->
 						<img class="crancy-logo__main--small" src="~/img/logo-icon.png" alt="#">
-						<img class="crancy-logo__main--small--dark" src="~/img/logo-icon-dark.png" alt="#">
 					</a>
 					<div id="crancy__sicon" class="crancy__sicon close-icon">
 						<img src="~/img/arrow-icon.svg">
@@ -136,11 +153,8 @@
 											<a class="crancy-logo" onclick="onButtonProfileDiaryClicked()">
 												<!-- Logo for Default -->
 												<img class="crancy-logo__main" src="~/img/logo.png" alt="#">
-												<img class="crancy-logo__main--dark" src="~/img/logo-dark.png" alt="#">
 												<!-- Logo for Dark Version -->
 												<img class="crancy-logo__main--small" src="~/img/logo-icon.png" alt="#">
-												<img class="crancy-logo__main--small--dark" src="~/img/logo-icon-dark.png"
-													 alt="#">
 											</a>
 										</div>
 									</div>
@@ -282,24 +296,6 @@
 		@RenderBody()
 	</div>
 
-    <!-- Dashra Scripts -->
-    <script src="~/js/jquery.min.js"></script>
-    <script src="~/js/jquery-migrate.js"></script>
-    <script src="~/js/popper.min.js"></script>
-    <script src="~/js/bootstrap.min.js"></script>
-    <script src="~/js/charts.js"></script>
-    <script src="~/js/final-countdown.min.js"></script>
-    <script src="~/js/fancy-box.min.js"></script>
-    <script src="~/js/fullcalendar.min.js"></script>
-    <script src="~/js/datatables.min.js"></script>
-    <script src="~/js/circle-progress.min.js"></script>
-    <script src="~/js/jquery-jvectormap.js"></script>
-    <script src="~/js/jvector-map.js"></script>
-    <script src="~/js/nice-select.min.js"></script>
-    <script src="~/js/pikaday.min.js"></script>
-    <script src="~/js/main.js"></script>
-
-    @await RenderSectionAsync("Scripts", required: false)
 	<script>
 		function onButtonProfileDiaryClicked() {
 			location.href = '@Url.Action("Index", "ProfileDiary", new { area = "Diary" })';
