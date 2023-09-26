@@ -56,6 +56,14 @@ Version:	1.0.0
 	--white-color: #fff;
 }
 
+.title-plash {
+	font-size: 60px;
+	padding: 30px;
+	color: var(--color-02);
+	text-align: center;
+	font-family: BalooRegularFont;
+}
+
 body, button, input, select, optgroup, textarea{
 	font-family: ChapbookRegularFont;
 	color: var(--color-02);
@@ -1159,6 +1167,14 @@ h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a {
 }
 }
 @media only screen and  (max-width: 767px) {
+	.title-plash {
+		font-size: 30px;
+		padding: 20px;
+		color: var(--color-02);
+		text-align: center;
+		font-family: BalooRegularFont;
+	}
+
 .crancy-header__form-inner {
 	width: 175px;
 	position: relative;
@@ -3272,7 +3288,7 @@ button.crancy-item__btn{
 	width: 68%;
 }
 .crancy-chatbox__outgoing .crancy-chatbox__incoming-list {
-	align-items: end;
+	align-items: start;
 }
 .crancy-chatbox__title {
 	font-size: 22px;
@@ -3521,8 +3537,7 @@ span.crancy-chatbox__typing {
 }
 .crancy-chatbox__incoming-text {
 	margin: 0;
-	font-size: 16px;
-	color: #2F3032;
+	font-size: 20px;
 }
 .crancy-chatbox__archive-date {
 	display: flex;
@@ -3814,11 +3829,12 @@ span.crancy-chatbox__typing {
 	margin-left: 115px;
 	margin-top: 45px;
 }
-.crancy-chatbox__outgoing .crancy-chatbox__incoming-chat {
-	background: var(--color-02);
-	color: #fff;
-	border-radius: 10px 0 10px 10px;
-}
+	.crancy-chatbox__outgoing .crancy-chatbox__incoming-chat {
+		background: var(--color-02);
+		color: #fff;
+		border-radius: 0px 20px 20px 20px;
+		font-size:20px;
+	}
 .crancy-chatbox__outgoing .crancy-chatbox__time {
 	text-align: right;
 }
@@ -9867,4 +9883,5 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
 	100% {
 		opacity: 0;
 	}
-} 
+}
+

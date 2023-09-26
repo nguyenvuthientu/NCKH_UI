@@ -1,0 +1,40 @@
+﻿
+
+<div class="modal fade" id="popupNewDiary" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" style="background: #00000080;">
+    <div class="modal-dialog modal-xl" style="max-height:90%; margin-top: 100px;">
+        <div class="modal-content" style="max-height: 90%; overflow-y: auto;">
+            <div class="modal-header">
+                <h1 class="h4 mb-3 form-title"><strong>Thêm mới nội dung</strong></h1>
+            </div>
+            <div class="modal-body">
+                <input class="form-control" >
+
+            </div>
+            <div class="modal-footer">
+                <button class="crancy-btn" type="submit" onclick="onButtonSaveNewDiaryClicked()">Thêm</button>
+                <button class="crancy-btn" type="submit" onclick="onButtonCloseNewDiaryClicked()">Thoát</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function onAddNewCustomerClicked() {
+        location.href = '@Url.Action("CustomerDetail", "Customer", new { area = "Functions" })';
+    }
+
+    function onButtonSaveNewDiaryClicked() {
+        var modal = document.getElementById("popupNewDiary");
+        modal.classList.remove("show", "in");
+        modal.style.display = "none";
+
+        notify("Cập nhật dữ liệu thành công", "success");
+    }
+
+    function onButtonCloseNewDiaryClicked() {
+        var modal = document.getElementById("popupNewDiary");
+        modal.classList.remove("show", "in");
+        modal.style.display = "none";
+    }
+
+</script>

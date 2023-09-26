@@ -1,46 +1,50 @@
-﻿<span id="splash-overlay" class="splash"></span>
-<span id="welcome" class="z-depth-4"></span>
+﻿<span id="splash-overlay" class="splash">
+</span>
+<span id="welcome" class="z-depth-4">
+</span>
 
 <div class="body-bg">
-<section class="crancy-wc crancy-wc__full crancy-bg-cover" style="background-image: url('../../img/credential-bg.svg');">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="crancy-wc__form">
-                    <div class="crancy-wc__form--middle">
-                        <div class="crancy-wc__banner">
-                            <img src="~/img/welcome-vector.png" alt="#">
-                        </div>
-                        <div class="crancy-wc__form-inner">
-                            <div class="crancy-wc__logo">
-                                <img src="~/img/logo-white.png">
+    <section class="crancy-wc crancy-wc__full crancy-bg-cover" style="background-image: url('../../img/credential-bg.svg');">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12">
+                    <div class="crancy-wc__form">
+                        <div class="col-12 title-plash">NHẬT KÝ HÀNH TRÌNH</div>
+                        <div class="crancy-wc__form--middle">
+                            <div class="crancy-wc__banner">
+                                <img src="~/img/welcome-vector.png" alt="#">
                             </div>
-                            <div class="crancy-wc__heading">
-                                <h3 class="crancy-wc__form-title crancy-wc__form-title__one">Tui muốn vô nhật ký</h3>
+                            <div class="crancy-wc__form-inner">
+                                <div class="crancy-wc__logo">
+                                    <img src="~/img/logo-white.png">
+                                </div>
+                                <div class="crancy-wc__heading">
+                                    <h3 class="crancy-wc__form-title crancy-wc__form-title__one">Tui muốn vô nhật ký</h3>
+                                </div>
+                                <!-- Sign in Form -->
+                                <form class="crancy-wc__form-main" action="index.html" method="post">
+                                    <!-- Form Group -->
+                                    <div class="form-group link-href form-mg-top25" style="text-align: center;">
+                                        <a onclick="onButtonLoginClicked()">Đã có tài khoản</a>
+                                    </div>
+                                    <div class="form-group link-href form-mg-top25" style="text-align: center;">
+                                        <a onclick="onButtonCreateAccountClicked()">Chưa có tài khoản</a>
+                                    </div>
+                                </form>
+                                <!-- End Sign in Form -->
                             </div>
-                            <!-- Sign in Form -->
-                            <form class="crancy-wc__form-main" action="index.html" method="post">
-                                <!-- Form Group -->
-                                <div class="form-group link-href form-mg-top25" style="text-align: center;">
-                                    <a onclick="onButtonLoginClicked()">Đã có tài khoản</a>
-                                </div>
-                                <div class="form-group link-href form-mg-top25" style="text-align: center;">
-                                    <a onclick="onButtonCreateAccountClicked()">Chưa có tài khoản</a>
-                                </div>
-                            </form>
-                            <!-- End Sign in Form -->
                         </div>
+                        <div class="crancy-wc__footer--top">
+                            <p class="crancy-wc__footer--copyright">&copy; 2023 <strong>Nhat Ky Hanh Trinh.</strong> All Right Reserved. </p>
+                        </div>
+                        <!-- End Footer Top -->
                     </div>
-                    <div class="crancy-wc__footer--top">
-                        <p class="crancy-wc__footer--copyright">&copy; 2023 <strong>Nhat Ky Hanh Trinh.</strong> All Right Reserved. </p>
-                    </div>
-                    <!-- End Footer Top -->
                 </div>
             </div>
         </div>
-    </div>
-</section>
-        </div>
+    </section>
+</div>
 
 <script>
     function onButtonLoginClicked() {
