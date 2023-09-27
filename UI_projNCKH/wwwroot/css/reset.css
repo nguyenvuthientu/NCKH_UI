@@ -327,6 +327,9 @@ textarea::-ms-input-placeholder,input::-ms-input-placeholder {
 	padding-right: 25px;
 	border-left: 1px solid #E4F2FF;
 	padding-left: 25px;
+	background-image: url(../../img/credential-bg.svg);
+	background-position: center;
+	background-size: 100%;
 }
 .crancy-adashboard {
 	padding-bottom: 50px;
